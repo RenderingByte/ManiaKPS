@@ -23,7 +23,7 @@ The goal of this project is to provide the user with accurate information about 
 
 ## Getting Started
 
-- Visit the website: [soon]
+- Visit the website: [ManiaKPS](https://PcTechery.github.io/ManiaKPS/)
 - Choose a Mode
 - TAP!
 
