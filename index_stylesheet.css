@@ -1,0 +1,192 @@
+body {
+    font-family: 'Nunito';font-size: 22px;
+    background-color: #001618;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.div_1 {
+    margin-top: 250px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-columns: 225px 225px 225px;
+
+    margin-top: 75px;
+    text-align: center;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra {
+    position: fixed;     
+    text-align: left;    
+    bottom: 0px; 
+    left: 8px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 5px;
+    color: rgb(90, 87, 87);
+}
+
+a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    border: 1px solid rgb(24, 22, 22);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+a span{
+    position: relative;
+    z-index: 2;
+}
+
+a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3f3434;
+    transition: all .35s;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.notification-bar {
+    width: 70%;
+}
+
+.notification-text {
+    background-color: #ff4800;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    width: 60%;
+    position: fixed;
+    top: 20px;
+    left: 18%;
+}
+
+.notification-bar label {
+    cursor: pointer;
+    color: #fff;
+    z-index: 5;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+    
+.two {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.three {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.four {
+  -webkit-animation-delay: 3.5s;
+  -moz-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.five {
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+.six {
+  -webkit-animation-delay: 5.5s;
+  -moz-animation-delay: 5.5s;
+  animation-delay: 5.5s;
+}
+
+.seven {
+  -webkit-animation-delay: 6.5s;
+  -moz-animation-delay: 6.5s;
+  animation-delay: 6.5s;
+}
+
+.eight {
+  -webkit-animation-delay: 7.5s;
+  -moz-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
