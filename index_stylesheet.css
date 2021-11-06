@@ -93,7 +93,7 @@ a:hover:after{
     width: 60%;
     position: fixed;
     top: 20px;
-    left: 18%;
+    left: 19.5%;
 }
 
 .notification-bar label {
@@ -115,48 +115,6 @@ a:hover:after{
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;
-}
-    
-.two {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-}
-
-.three {
-  -webkit-animation-delay: 2.5s;
-  -moz-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-}
-
-.four {
-  -webkit-animation-delay: 3.5s;
-  -moz-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-}
-
-.five {
-  -webkit-animation-delay: 4.5s;
-  -moz-animation-delay: 4.5s;
-  animation-delay: 4.5s;
-}
-
-.six {
-  -webkit-animation-delay: 5.5s;
-  -moz-animation-delay: 5.5s;
-  animation-delay: 5.5s;
-}
-
-.seven {
-  -webkit-animation-delay: 6.5s;
-  -moz-animation-delay: 6.5s;
-  animation-delay: 6.5s;
-}
-
-.eight {
-  -webkit-animation-delay: 7.5s;
-  -moz-animation-delay: 7.5s;
-  animation-delay: 7.5s;
 }
 
 @-webkit-keyframes fadeInUp {
