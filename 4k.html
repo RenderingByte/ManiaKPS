@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Mania KPS | 4K</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="4k_stylesheet.css">
+
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="4k.js"> </script>
+    </head>
+
+    <div class="notification-bar" id="NotificationBar">
+        <div class="notification-text" id="NotificationText"></div>
+    </div> 
+
+    <div class="center box animate fadeInUp one">
+        <h1 id="step_text">Keybinds</h1>
+        <input onkeypress="new_keybind(event, 1);" type="text" id="Key1" value="D" maxlength='1' size='1'>   
+        <input onkeypress="new_keybind(event, 2);" type="text" id="Key2" value="F" maxlength='1' size='1'>   
+        <input onkeypress="new_keybind(event, 3);" type="text" id="Key3" value="J" maxlength='1' size='1'>   
+        <input onkeypress="new_keybind(event, 4);" type="text" id="Key4" value="K" maxlength='1' size='1'>
+
+        <a onclick="switch_mode(0);" class="hidden" style="color: magenta;" id="time"><span>TIME</span></a>
+        <a onclick="switch_mode(1);" class="hidden" id="click"><span>CLICKS</span></a>
+
+        <p class="hidden" id="ClickTimeText"> End After <input onkeypress="click_time_amount();" type="text" id="Click_Time_Amount" maxlength='2' size='2'>  seconds </p>
+        <br>
+        <a onclick="proceed_setup(0);" style="display: inline-block;" id="backbtn"><span>BACK</span></a>
+        <a onclick="proceed_setup(1);" style="display: inline-block;" id="nextbtn"><span>NEXT</span></a>
+
+        <h1 id="Countdown" class="hidden">3</h1>
+    </div>
+
+
+    <h1 id="TimerCount" class="hidden"></h1>
+
+    <div id="graph" class="graph hidden"></div>
+
+    <h1 id="TotalClicks" class="hidden"></h1>
+    <h1 id="KpsLbl" class="hidden"></h1>
+    <h1 id="BpmLbl" class="hidden"></h1>
+
+
+
+
+</html>

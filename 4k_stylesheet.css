@@ -1,0 +1,136 @@
+body {
+    font-family: 'Nunito';font-size: 22px;
+    background-color: #001618;
+    color: white;
+    text-align: center;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    font-family: 'Nunito';font-size: 25px;
+    color: magenta;
+    text-align: center;
+    border: none;
+    caret-color: transparent;
+}
+
+.center {
+  margin: 275px auto;
+  line-height: 100px; 
+  text-align: center;
+}
+
+a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  border: 1px solid rgb(24, 22, 22);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #3f3434;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.notification-text {
+  background-color: #001618;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  width: 60%;
+  position: fixed;
+  top: 20px;
+  left: 19%;
+}
+
+.notification-bar label {
+  cursor: pointer;
+  color: #fff;
+  z-index: 5;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.graph {
+  height: 300px;
+  width: 40%;
+}
